@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <form style = "border:1px solid black;  width:850px;height:390px; margin-left:20%;">
+            <table align="center" width=500px>
+                <tr align ="center">
+                    <td colspan="4"><b>CATÁLOGO DE ARTE</b></td>
+                </tr>
+                <tr align ="left"><td><b>Introduce los términos de búsqueda:</b></td></tr>
+
+                <tr>
+                    <td>
+                        <table border ="1" border-color="black">
+                            <tr>
+                                <td colspan="2" align="center">OBRA</td>
+                            </tr>
+
+                            <tr>
+                                <td>Titulo</td>
+                                <td><input align ="left" type="text" name="titulo" required size="12"></td>
+                            </tr>
+                            <tr>
+                                <td>Autor</td>
+                                <td><input align ="left" type="text" name="autor" required size="12"></td>
+                            </tr>
+                        
+                        </table>
+
+                    </td>
+
+                    <td>
+                        <table border ="1" border-color="black">
+                                <tr>
+                                    <td colspan="3" align="center">TIPO</td>
+                                </tr>
+    
+                                <tr>
+                                    <td><input align ="left" type="checkbox" name="esc" required></td>
+                                    <td>Escultura</td>
+                                </tr>
+                                <tr>
+                                    <td><input align ="left" type="checkbox" name="arq" required></td>
+                                    <td>Arquitectura</td>
+                                </tr>
+                                <tr>
+                                    <td><input align ="left" type="checkbox" name="pint" required></td>
+                                    <td>Pintura</td>
+                                </tr>
+                            
+                        </table>
+                    </td>
+
+                    <td>
+                        <table>
+                            <tr>
+                                <td colspan="2" align="center">DISPONIBILIDAD</td>
+                            </tr>
+
+                            <tr>
+                                <td><input align ="left" type="radio" name="publ" required></td>
+                                <td>Museo / Acceso Público</td>
+                            </tr>
+                            <tr>
+                                <td><input align ="left" type="radio" name="priv" required></td>
+                                <td>Colección Privada</td>
+                            </tr>
+                        </table> 
+                        
+                    </td>
+
+                    <td>
+                        <table>
+                            <tr>
+                                <td colspan="1" align="center">ESTILO</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <select name="estilo">
+                                        <option value="clas">Clásico</option>
+                                        <option value="abs">Abstracto</option>
+                                        <option value="surr">Subrrealista</option>
+                                        <option value="otro">Otros</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table> 
+                </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Háganos saber sus sugerencias: </td>
+                                <td><textarea name="comentarios" rows="4" cols="40">Me gustaría indicar que... </textarea></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr align="rigth">
+                    <td colspan="4" align="center">
+                        <br>
+                        <input type="submit" value="Buscar"/>
+                    </td>
+                </tr>
+
+            </table>
+
+        </form>
+    </body>
+</html>
