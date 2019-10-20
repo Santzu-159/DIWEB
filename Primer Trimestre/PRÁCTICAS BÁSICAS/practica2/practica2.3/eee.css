@@ -1,0 +1,12 @@
+h1{
+	color:#00aa00;
+	text-decoration:underline;
+}
+p span{
+	color:#00aa00;
+	text-decoration:underline;
+}
+div span{
+	color:#00aa00;	
+	text-decoration:line-through;
+}
