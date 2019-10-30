@@ -1,0 +1,27 @@
+h1{margin-left:50px;}
+
+.menu ul {
+    display: flex;
+    padding: 0;
+    margin: 0px;
+    list-style: none;
+    border-radius: 5px 30px 45px 60px;
+}
+.menu a {
+    display: block;
+    padding: 2em;
+    background-color: #F9B53C;
+    text-decoration: none;
+    color: #191C26;
+}
+.menu a:hover {
+    background-color: #CC673B;
+}
+.menu ul li ul {
+    display: none;
+    border-radius: 5px 30px 45px 60px;
+}
+.menu ul li a:hover + ul, .menu ul li ul:hover {
+    display: block;
+    border-radius: 5px 30px 45px 60px;
+}
