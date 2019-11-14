@@ -1,0 +1,208 @@
+/* Formatear el formulario a dos columnas */
+body {
+  font-size: 13px/1.6 ;
+  font-family:Tahoma, sans-serif;
+  background-color: #F5F5F5
+}
+
+.izquierda{ 
+  float: left;
+  clear:left;
+}
+
+.right{ 
+  float: right;
+  clear:right;
+}
+
+ul{ 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#contenedor{ 
+  background-color: #FFF;
+  border: 1px solid silver;
+  margin: 1em auto;
+  padding: 1em;
+  width: 768px;
+}
+
+.requerido{
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #C00;
+}
+
+h2 {
+  font: normal 2em arial, sans-serif;
+  margin: 0;
+}
+
+
+ .botones{ 
+  border: 2px;
+  border-style:solid;
+  border-color: #CCC;
+  clear: both;
+  float:none;
+  padding: 1em 0;
+  margin-top: 1em;
+  position:right;
+  width: 100%;
+}
+
+.botones{
+ font-size: 1.3em;
+}
+
+ul li{
+  margin: 0.5em 0;
+  padding: 0.5em;
+  width: 46%;
+}
+
+.titulo{
+font-weight: bold;
+}
+
+ul li div span {
+  float:left;
+  padding: 0.3em 0;
+}
+
+.completo{ 
+  width: 100%;
+}
+
+.mitad{
+  width: 50%;
+}
+
+
+.tercio{ 
+  width: 33%;
+}
+
+.dostercios {
+  width: 66%;
+}
+
+
+ul li div span label{ 
+  display:block;
+  font-weight: normal;
+  font-size: 0.8em;
+  font-family: arial, sans-serif;
+  color: #333;
+}
+
+.ayuda {
+  visibility:hidden;
+}
+
+
+ul li input {
+  padding: 0.2em;
+}
+
+#apellido1, #apellido2, #direccion, #email {
+  width: 260px;
+}
+
+
+#codigopostal{ 
+  width: 80px;
+}
+
+#provincia {
+  width: 90px;
+}
+
+#pais {
+  width: 150px;
+}
+
+#telefonofijo, #telefonomovil {
+  width: 135px;
+}
+
+
+/* Cambiar el color en el :hover y resaltar los campos en el :focus */
+ul li:hover{
+  background-color: #FF9;
+}
+.botones:hover{
+  background-color: transparent;
+}
+
+ul li input:focus{ 
+  border: 2px solid #E6B700;
+}
+
+/* Formatear el formulario a una columna */
+.izquierda, .derecha {
+  float:none;
+  width: auto;
+}
+
+ul li{ 
+  overflow:hidden;
+}
+
+.titulo {
+  float:left;
+  width: 150px;
+}
+
+ul li div {
+  margin-left: 160px;
+}
+  
+/* Aspecto final del formulario con los mensajes de ayuda */
+h2 {
+  margin-bottom: 0.3em;
+}
+
+
+ul li {
+  border-top: 1px solid #CCC;
+  margin: 0;
+  padding: 1em;
+}
+
+
+.botones {
+  margin: 0;
+}
+
+#alta{
+  margin-left:600px
+}
+
+.titulo{ 
+  position:right;
+  width: 100px;
+}
+
+ul li div {
+  margin-left: 110px;
+  overflow:hidden;
+}
+
+
+ul li {
+  position:relative;
+}
+
+.ayuda :hover{
+  display:block;
+  margin: 0.3em;
+  position:absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+}
+
+

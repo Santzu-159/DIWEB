@@ -1,0 +1,15 @@
+a{
+    text-decoration:none;
+    color:blue;
+    font-size:18px;
+    font-family: verdana,sans-serif;    
+}
+
+a:hover{
+    text-decoration:none;
+    color:red;
+    font-size:18px;
+    font-family: verdana,sans-serif;  
+    transition-timing-function:linear;
+    transition-duration: 0.8s, 0.2s;
+}
