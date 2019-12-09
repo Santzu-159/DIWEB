@@ -1,0 +1,18 @@
+@default-size: 1em;
+@default-width: 800px;
+@min-height: 10%;
+@border-size: 1cm;
+@default-color: #34A343;
+
+@paragraph-size: @default-size - 0.2em;
+@article-width: @default-width *2;
+@total-height: @min-height * 10;
+@border-thicker: @border-size + 0.5mm;
+
+body{
+	background-color: @default-color + #ccc;
+}
+.content{
+	width: @article-width;
+    border: @border-size solid @default-color;
+}

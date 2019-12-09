@@ -1,0 +1,11 @@
+/**
+* For function reference
+* http://lesscss.org/functions/@misc-functions/@misc-functions 
+*/
+.block {
+  color: #153445;
+  font-size: 2em;
+}
+.menu {
+  width: width("rocket.png");
+}

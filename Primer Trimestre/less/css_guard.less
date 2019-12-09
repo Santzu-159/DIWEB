@@ -1,0 +1,24 @@
+/*>, >=, =, =<, <. */
+@family: 'Arial, Helvetica, sans';
+@width: 800px;
+
+.block (@width) when (@width >= 800px){
+	font-size: 1.2em;
+}
+.block (@width) when (@width < 800px){
+	font-size: 0.8em;
+}
+.block (@width) {
+	font-family: @family;
+}
+
+.wide {.block(1000px) }
+.narrow {.block(500px) }
+
+/*
+.mixin (@a) when (@media = mobile) { }
+.mixin (@a) when (@media = desktop) { }
+
+.max (@a; @b) when (@a > @b) { width: @a}
+.max (@a; @b) when (@a < @b) { width: @b}
+*/

@@ -1,0 +1,8 @@
+.create-block(3);
+
+.create-block(@n, @i:1) when (@i < @n) {
+	.block-@{i} {
+		width: (@i * 100% / @n);
+	}
+	.create-block(@n, (@i + 1));
+}

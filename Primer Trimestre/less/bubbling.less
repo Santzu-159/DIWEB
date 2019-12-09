@@ -1,0 +1,19 @@
+.font-settings {
+	font-size: 1em;
+	
+	@media screen {
+		background-color: black;
+		font-size:0.9em;
+		@media (min-width: 800px) and (orientation: landscape) {
+			font-size: 1.2em;
+		}
+	}
+	@media tv {
+		font-size: 1.4em;
+	}
+	
+	@page {
+		font-size: 1.4em;
+		background-color: black;
+	}
+}

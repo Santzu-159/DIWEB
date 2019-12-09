@@ -1,0 +1,14 @@
+section {
+  background-color: gray;
+}
+section h2 {
+  font-size: 3em;
+  text-align: center;
+}
+section .preface {
+  font-variant: italic;
+}
+section .content {
+  padding: 1em;
+  font-size: 0.9em;
+}

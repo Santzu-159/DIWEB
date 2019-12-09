@@ -1,0 +1,17 @@
+.darktext {
+  background-color: #001133;
+  color: #5c5c5c;
+  font-size: 0.8em;
+}
+p {
+  border: 1px solid gray;
+  background-color: #001133;
+  color: #5c5c5c;
+  font-size: 0.8em;
+}
+.articletext {
+  border: 1px solid gray;
+  background-color: #001133;
+  color: #5c5c5c;
+  font-size: 0.8em;
+}
