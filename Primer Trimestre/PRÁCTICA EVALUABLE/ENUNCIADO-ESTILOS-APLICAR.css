@@ -1,0 +1,124 @@
+CUERPO	
+	FUENTE: Georgian
+    TAMAÑO DE FUENTE: 14pt
+
+ETIQUETA HEADER
+	FONDO:#1f1f14
+	ALTURA:5%
+
+ENCABEZADO 2 
+	ALINEACIÓN DEL TEXTO:izquierda
+	MARGEN SUPERIOR:7%
+
+
+CLASE pcontactar 
+	TAMAÑO DE FUENTE:2em
+
+
+IDENTIFICADOR enlace 
+	SIN SUBRAYADO
+	color:white
+
+
+IDENTIFICADOR fondoEnlace
+	COLOR DE FONDO:black
+
+
+IDENTIFICADOR base1 
+	ANCHO:30%
+	FONDO:#e6e6e6
+	FLOTAR IZQUIERDA:izquierda
+	ALINEACIÓN DEL TEXTO:centrada
+	ALTURA:48em
+
+
+IDENTIFICADOR base1trabajos 
+	ANCHO:30%
+	FONDO:#e6e6e6
+	FLOTAR:izquierda
+	ALINEACIÓN DEL TEXTO:centrada
+	ALTURA:75em
+
+
+IDENTIFICADOR base1contactar 
+	ANCHO:30%
+	FONDO:#e6e6e6
+	FLOTAR:izquierda
+	ALINEACIÓN DE TEXTO:centrada
+	ALTURA:35em
+
+
+ CLASE foto 
+	MARGEN:5%
+
+
+IDENTIFICADOR base2
+	ANCHO:70%
+	FONDO: #f2f2f2
+	FLOTAR:derecha
+	ALTURA:48em
+
+
+IDENTIFICADOR base2trabajos 
+	ANCHO:70%
+	FONDO: #f2f2f2
+	FLOTAR:derecha
+	ALTURA:75em
+
+
+IDENTIFICADOR base2contactar 
+	ANCHO:70%
+	FONDO: #f2f2f2
+	FLOTAR:derecha
+	ALTURA:35em
+
+
+IDENTIFICADOR presentacion 
+	ALINEACIÓN TEXTO:izquierda
+	MARGEN:5%
+
+
+IDENTIFICADOR descripcion 
+	MARGEN:5%
+
+
+TABLA
+	MARGEN SUPERIOR:5%
+	TAMAÑO DE FUENTE:14pt
+
+
+CLASE normal 
+	ANCHO:50%
+
+
+CLASE img 
+	ALINEACIÓN DEL TEXTO:centrada
+	ANCHO:50%
+
+
+
+LISTA
+    SIN SUBRAYADO
+    MARGEN SUPERIOR: 10%
+    PADDING: 0px
+    ANCHO: 100%
+    FUENTE: Georgian
+    TAMAÑO DE FUENTE: 11pt
+
+
+ELEMENTO DE LISTA
+    COLOR DE FONDO: #666
+
+
+ANCLAS DE LA LISTA 
+    COLOR: #ccc
+    SIN SUBRAYADO 
+    EN MAYÚSCULA
+	VISUALIZAR EN BLOQUE
+    PADDING: 15px 15px 15px 15px
+
+
+HOVER EN ANCLAS DE LA LISTA 
+    FONDO: #000
+    BORDE IZQUIERDO: 10px solid #333
+    COLOR: #fff

@@ -1,0 +1,132 @@
+body{
+	font-family: Georgian;
+    font-size: 14pt;
+}
+
+header{
+	background:#1f1f14;
+	height:5%;
+}
+
+h2{
+	text-align:left;
+	margin-top:7%;
+}
+
+.pcontactar {
+	font-size:2em;
+}
+
+#enlace {
+	text-decoration:none;
+	color:white;
+}
+
+#fondoEnlace{
+	background-color:black;
+
+}
+
+#base1{ 
+	width:30%;
+	background:#e6e6e6;
+	float:left;
+	text-align:center;
+	height: 48em;
+}
+
+#base1trabajos{ 
+	width:30%;
+	background:#e6e6e6;
+	float:left;
+	text-align:center;
+	height: 75em;
+}
+
+#base1contactar {
+	width:30%;
+	background:#e6e6e6;
+	float:left;
+	text-align:center;
+	height: 35em;
+}
+
+.foto {
+	margin:5%
+}
+
+#base2{
+	width:70%;
+	background: #f2f2f2;
+	float:right;
+	height: 48em;
+}
+
+#base2trabajos {
+	width:70%;
+	background: #f2f2f2;
+	float:right;
+	height: 75em;
+}
+
+
+#base2contactar {
+	width:70%;
+	background: #f2f2f2;
+	float:right;
+	height: 35em;
+}
+	
+#presentacion {
+
+	text-align:left;
+	margin:5%;
+}
+	
+
+#descripcion {margin:5%;}
+
+table{
+	margin-top:5%;
+	font-size:14pt;
+
+}
+.normal {width:50%;}
+
+.img {
+	text-align:center;
+	width:50%;
+
+}
+
+
+ul{
+	text-decoration:none;
+	list-style:none;
+	margin-top:10%;
+	padding:0px;
+	width:100%;
+	font-family:Georgian;
+	font-size:11pt;
+
+}
+
+li{
+	background:#666;
+}
+
+
+ul li a{
+	background:#ccc;
+	text-decoration:none;
+	text-transform: uppercase;
+	display:block;
+	padding: 15px 15px 15px 15px;
+
+}
+   
+ul li a:hover{
+	background:#000;
+	border-left:10px solid #333;
+	color:#fff;
+} 
