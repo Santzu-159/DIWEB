@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Ejemplo de función periódica</title>
+<meta charset="utf-8">
+
+<script type="text/javascript">
+
+function alertaTras5seg() {
+	setInterval(mostrarAlerta, 5000);
+}
+
+function mostrarAlerta() {
+	alert('Han pasado 5 segundos desde la carga de la página');
+}
+
+</script>
+</head>
+
+<body onload="alertaTras5seg()" >
+	<div id="cabecera">
+		<h2>Curso</h2><h3>Ejemplos JavaScript</h3>
+	</div>
+</body>
+</html>
