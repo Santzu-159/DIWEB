@@ -1,3 +1,13 @@
 body{
     background-image: url("fondo.jpg");
 }
+
+.bg-1 {
+    width: 235px; height: 373px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+.bg-2 {
+    width: 244px; height: 367px;
+    background: url('css_sprites.png') -265px -10px;
+}
