@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Simple video control</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+</head>
+<body onload ="mostrarNombre();">
+    <header>
+        <h1>Reproductor de Video</h1>
+        <button onclick="playVideo();" class="btn btn-success">
+            Play <i class="glyphicon glyphicon-play"></i>
+        </button>
+        <button onclick="pauseVideo();" class="btn btn-warning">
+            Pause <i class="glyphicon glyphicon-pause"></i>
+        </button>
+        <button onclick="stopVideo()" class="btn btn-danger">
+            Stop <i class="glyphicon glyphicon-stop"></i>
+        </button> 
+        <button onclick="rewindVideo();"  class="btn btn-info">
+            Rewind <i class="glyphicon glyphicon-fast-backward"></i>
+        </button>
+        <button onclick="beforeVideo();"  class="btn btn-info">
+          Before <i class="glyphicon glyphicon-fast-backward"></i>
+        </button>
+        <button onclick="nextVideo();"  class="btn btn-info">
+          Next <i class="glyphicon glyphicon-fast-backward"></i>
+        </button>
+        <button onclick="suffleVideo();"  class="btn btn-info">
+          Shuffle <i class="glyphicon glyphicon-fast-backward"></i>
+        </button>
+       <!-- <button onclick="agrandarVideo();"  class="btn btn-info">
+          Agrandar <i class="glyphicon glyphicon-fast-backward"></i>
+        </button>
+        <button onclick="disminuirVideo();"  class="btn btn-info">
+          Disminuir <i class="glyphicon glyphicon-fast-backward"></i>
+        </button>-->
+    </header>
+
+    <video id="myVideo" controls width=500px height=300px sytle="">
+      <source src="video1.mp4" type="video/mp4" />
+      Your browser does not support the video element. 
+    </video>
+
+    <p id="nombre"></p>
+
+<script>
+
+  let videos=[
+    'video1.mp4',
+    'video2.mp4',
+    'video3.mp4'
+  ];
+
+  let videoActual = 0;
+
+   theVideo = document.querySelector("#myVideo");
+
+    function playVideo() {
+       theVideo.play();
+    }
+    
+    function pauseVideo() {
+       theVideo.pause();
+    }
+
+    function stopVideo() {
+      theVideo.currentTime = 0 ;
+      theVideo.pause();
+    }
+    
+    function rewindVideo() {
+      theVideo.currentTime = 0;
+    }
+
+    function beforeVideo() {
+      videoActual = videoActual -1;
+
+      if(videoActual<0){
+        videoActual = videos.length -1;
+      }
+      theVideo.src = videos[videoActual];
+      theVideo.currentTime = 0;
+      theVideo.play();
+      mostrarNombre();
+    }
+
+    function nextVideo() {
+      videoActual = videoActual +1;
+
+      if(videoActual>videos.length-1){
+        videoActual = 0;
+      }
+
+      theVideo.src = videos[videoActual];
+      theVideo.currentTime = 0;
+      theVideo.play();
+      mostrarNombre();
+    }
+
+    function suffleVideo() {
+      videoActual = Math.floor(Math.random()*videos.length);
+      theVideo.src = videos[videoActual];
+      theVideo.currentTime = 0;
+      theVideo.play();
+      mostrarNombre();
+    }
+
+    function mostrarNombre(){
+      let nombre = document.getElementById("nombre");
+      nombre.innerHTML="Se esta reproduciento el vídeo: "+videos[videoActual];
+    }
+
+
+</script>
+</body>
+</html>
