@@ -29,89 +29,112 @@
         <button onclick="suffleVideo();"  class="btn btn-info">
           Shuffle <i class="glyphicon glyphicon-fast-backward"></i>
         </button>
-       <!-- <button onclick="agrandarVideo();"  class="btn btn-info">
+       <button onclick="agrandarVideo();"  class="btn btn-info">
           Agrandar <i class="glyphicon glyphicon-fast-backward"></i>
         </button>
         <button onclick="disminuirVideo();"  class="btn btn-info">
           Disminuir <i class="glyphicon glyphicon-fast-backward"></i>
-        </button>-->
+        </button>
     </header>
-
-    <video id="myVideo" controls width=500px height=300px sytle="">
-      <source src="video1.mp4" type="video/mp4" />
-      Your browser does not support the video element. 
-    </video>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+   
+      <video id="myVideo" controls width=500px height=300px style="margin-left:35%;">
+        <source src="video1.mp4" type="video/mp4" />
+        Your browser does not support the video element. 
+      </video>
 
     <p id="nombre"></p>
 
-<script>
+  <script>
 
-  let videos=[
-    'video1.mp4',
-    'video2.mp4',
-    'video3.mp4'
-  ];
+    let videos=[
+      'video1.mp4',
+      'video2.mp4',
+      'video3.mp4'
+    ];
 
-  let videoActual = 0;
+    let videoActual = 0;
+    let tamanyo = 1;
+    let tamanyoMax = 2;
+    let tamanyoMin = 0.5;
+    let step = 0.05;
 
-   theVideo = document.querySelector("#myVideo");
-
-    function playVideo() {
-       theVideo.play();
-    }
+    theVideo = document.querySelector("#myVideo");
     
-    function pauseVideo() {
-       theVideo.pause();
-    }
-
-    function stopVideo() {
-      theVideo.currentTime = 0 ;
-      theVideo.pause();
-    }
-    
-    function rewindVideo() {
-      theVideo.currentTime = 0;
-    }
-
-    function beforeVideo() {
-      videoActual = videoActual -1;
-
-      if(videoActual<0){
-        videoActual = videos.length -1;
+      function playVideo() {
+        theVideo.play();
       }
-      theVideo.src = videos[videoActual];
-      theVideo.currentTime = 0;
-      theVideo.play();
-      mostrarNombre();
-    }
-
-    function nextVideo() {
-      videoActual = videoActual +1;
-
-      if(videoActual>videos.length-1){
-        videoActual = 0;
+      
+      function pauseVideo() {
+        theVideo.pause();
       }
 
-      theVideo.src = videos[videoActual];
-      theVideo.currentTime = 0;
-      theVideo.play();
-      mostrarNombre();
-    }
+      function stopVideo() {
+        theVideo.currentTime = 0 ;
+        theVideo.pause();
+      }
+      
+      function rewindVideo() {
+        theVideo.currentTime = 0;
+      }
 
-    function suffleVideo() {
-      videoActual = Math.floor(Math.random()*videos.length);
-      theVideo.src = videos[videoActual];
-      theVideo.currentTime = 0;
-      theVideo.play();
-      mostrarNombre();
-    }
+      function beforeVideo() {
+        videoActual = videoActual -1;
 
-    function mostrarNombre(){
-      let nombre = document.getElementById("nombre");
-      nombre.innerHTML="Se esta reproduciento el vídeo: "+videos[videoActual];
-    }
+        if(videoActual<0){
+          videoActual = videos.length -1;
+        }
+        theVideo.src = videos[videoActual];
+        theVideo.currentTime = 0;
+        theVideo.play();
+        mostrarNombre();
+      }
+
+      function nextVideo() {
+        videoActual = videoActual +1;
+
+        if(videoActual>videos.length-1){
+          videoActual = 0;
+        }
+
+        theVideo.src = videos[videoActual];
+        theVideo.currentTime = 0;
+        theVideo.play();
+        mostrarNombre();
+      }
+
+      function suffleVideo() {
+        videoActual = Math.floor(Math.random()*videos.length);
+        theVideo.src = videos[videoActual];
+        theVideo.currentTime = 0;
+        theVideo.play();
+        mostrarNombre();
+      }
+
+      function mostrarNombre(){
+        let nombre = document.getElementById("nombre");
+        nombre.innerHTML="Se esta reproduciento el vídeo: "+videos[videoActual];
+      }
+
+      function agrandarVideo(){
+        tamanyo = tamanyo + step;
+
+        if(tamanyo > tamanyoMax){
+          tamanyo = tamanyoMax;
+        }
+        theVideo.style.transform = "scale("+tamanyo+")";
+      }
 
 
-</script>
+      function disminuirVideo(){
+        tamanyo = tamanyo - step;
+        
+        if(tamanyo < tamanyoMin){
+          tamanyo = tamanyoMin;
+        }
+        theVideo.style.transform = "scale("+tamanyo+")";
+      }
+
+  </script>
 </body>
 </html>
