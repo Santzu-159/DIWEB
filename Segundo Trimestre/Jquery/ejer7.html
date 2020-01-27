@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejemplo prop y removeProp</title>
+    </head>
+    <body>
+        <p></p>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            var $para=$("p");//el párrafo se guarda en variable para
+            $para.prop("codigo",1234);//inicializa la propiedad
+            $para.append("El código del lugar secreto es:", String($para.prop("codigo"))," . "); // muestra la propiedad
+            $para.removeProp("codigo"); //elimina propiedad
+            $para.append(" Ahora el código del lugar secreto es: ", String($para.prop("codigo")), " . "); //muestra la propiedad
+        </script>
+    </body>
+</html>

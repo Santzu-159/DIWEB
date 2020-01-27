@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Adding and removing classes</title>
+        <style type="text/css">
+            .disallowed{
+                color: red;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="http://jquery.com">jQuery</a>
+        <p id="pfirst">First content</p>
+
+        <!--Mostrar el contenido del enlace-->
+        <a id="link" class="linksClass" href="http://jquery.com"></a>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            //Quitar una clase y añadir otra clase
+            $(".enable").removeClass("enable").addClass("block");
+            //Anidara componente con efectos gráficos
+            $(".enable").slideToggle("slow");
+
+            //Mostrar el contenido del enlace
+            alert($("#link").text());
+
+            //Mostrar el contenido de la página
+            $("body").append($(".liksClass").text());
+
+            //Trabajar con elemento DOM a través de su selección
+            var lItems = $('li');
+            var rawLItem = lItems [0]; // lItems.get(0)
+            var content = rawLItem.innerHTML;
+            
+
+        </script>
+    </body>
+</html>

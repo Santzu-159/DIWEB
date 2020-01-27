@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Adding and removing classes</title>
+        <style type="text/css">
+            .disallowed{
+                color: red;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="http://jquery.com">jQuery</a>
+        <p id="pfirst">First content</p>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){//cuando el documento esté listo
+                $("a").mouseover(function(event){//evento de posicionar en enlace
+                    $("#pfirst").addClass("disallowed");//añadir clase al identificador 
+                });
+                $("a").mouseout(function(event){//al salir de posicionar en enlace
+                    $("#pfirst").removeClass("disallowed");//quita clase del identificador
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Obtener y establecer contenido</title>
+        <style type="text/css">
+            .horizontal{ /*<!--clase a utilizar-->*/
+                float: left;
+                margin:20px;
+                list-style:none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>PRUEBA SELECTORES</h1>
+        <a href="https://www.cuatrovientos.org">cuatro vientos</a>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        
+            $(document).ready(
+                function(){//cunado el documento esté listo
+                    alert($("h1").html());//muestra el contenido de h1
+                    //establece atributo en h1
+                    $("h1").html("Hola mundo"); //modifica h1
+                    alert($("a").attr("href"));//muestra el atributo de a
+                    $("a").html("google");//modifica a
+                    $("a").attr("href","http://www.google.es");//cambia atributo de a
+                });
+        </script>
+    </body>
+</html>

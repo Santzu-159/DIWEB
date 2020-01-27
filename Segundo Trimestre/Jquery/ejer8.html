@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ejemplo val</title>
+        <style>
+            p{color:red; margin:4px;}
+            b{color:blue;}
+        </style>
+    </head>
+    <body>
+        <p></p>
+        <select id="simple">
+            <option>Simple1</option>
+            <option>Simple2</option>
+        </select>
+        <select id="multiple" multiple="multiple">
+            <option selected="selected">Multiple1</option>
+            <option>Multiple2</option>
+            <option selected="selected">Multiple3</option>
+        </select>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            function mostrarval (){
+                var valorsimple = $("#simple").val();//se guarda valor simple
+                var valormultiple = $("#multiple").val();//se guarda valores múltiples
+                //se llevan a párrafos las variables
+                $("p").html("<b>Simple:</b>" + valorsimple + "<b>Multiple:</b>" + valormultiple);
+            }
+            $("select").change(mostrarval); //mostrar valor se pasa a change para los select
+            mostrarval();//se ejecuta la función
+        </script>
+    </body>
+</html>

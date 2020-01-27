@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Uso del método .html()</title>
+        <style>
+            p{
+                margin: 8px;
+                font-size: 20px;
+                color: blue;
+                cursor: pointer;/*el cursor es un puntero*/
+            }
+            b{text-decoration: underline;}
+        </style>
+    </head>
+    <body>
+        <p><b>click</b> para cambiar el <span id="etiqueta">html</span></p>
+        <p>a modo <span id="texto">texto</span></p>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        $("p").click(
+            function(){
+                var entrada = $(this).html();//se introduce el código del html en entrada
+                $this.text(entrada); //se pasa entada dentro del mismo elemento.
+            });
+        </script>
+    </body>
+</html>

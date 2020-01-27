@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>OBTENER Y ESTABLECER CONTENIDO</title>
+        <style>
+            .selected{color:blue;}
+            .resaltado{background-color: yellow;}
+        </style>
+    </head>
+    <body>
+        <p>Párrafo 1</p>
+        <p>Párrafo 2</p>
+        <p>Párrafo 3</p>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){//cuando el documento esté listo
+            $("p:last").addClass("selected"); //añade clase al último párrafo
+            $("p:first").addClass("resaltado");//añade clase al primer párrafo
+        });
+        </script>
+    </body>
+</html>

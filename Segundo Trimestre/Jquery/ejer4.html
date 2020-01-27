@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>EJEMPLO DE SELECTORES</title>
+        <style type="text/css">
+            .horizontal{ /*<!--clase a utilizar-->*/
+                float: left;
+                margin:20px;
+                list-style:none;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="media">
+            <li>Series
+                <ul>
+                    <li><a href="/sherlock/">Sherlock</a></li>
+                    <li>The Walking Dead</li>
+                    <li>Silicon Valley</li>
+                    <li>Braking Bad</li>
+                    <li>Game of Thrones</li>
+                </ul>
+            </li>
+            <li>Films
+                <ul>
+                    <li><a href="transformer.pdf">Transformers</a></li>
+                    <li>Interstellar</li>
+                    <li>The Hobbit</li>
+                    <li>The Imitation Game</li>
+                </ul>
+            </li>
+            <li>Books
+                <ul>
+                    <li>The Lord of the Ring
+                        (<a href="mailto:anaiesfp2@gmail.com">email</a>)
+                        <ul>
+                            <li> Part I</li>
+                            <li> Part II</li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.warnerbros.co.uk/brands/wizarding-world">Harry Potter</a></li>
+                    <li>The Hunger Games</li>
+                </ul>
+            </li>
+        </ul>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            //aplicación de clase a los li del identificador media y posterior eliminación
+            $(document).ready(
+                function(){//cuando el documento esté listo
+                    $("#media > li").addClass("horizontal");//añade clase al identificador para hijos del primer nivel
+                    //Al primer elemento de la lista
+                    $("media li:first ").addClass("horizontal");
+                    //Al último elemento de la lista: cuidado quién es el último elemento
+                    $("media li:last ")
+                });
+            
+        </script>
+    </body>
+</html>
