@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Actividad 4.1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+        <ul>
+            <li>Lista 1:
+                <ul>
+                    <li>Tortilla</li>
+                    <li>Jamón</li>
+                    <li>Queso</li>
+                </ul>
+            </li>
+            <li>Lista 2:
+                <ul>
+                    <li>Coca Cola</li>
+                    <li>Leche</li>
+                    <li>Té</li>
+                </ul>
+            </li>
+        </ul>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("li:first > ul > li:first").css("display", "none");
+            });
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Actividad 4.2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <p>Número: <span id="number">7</span></p>
+        <div id="contenedorLista"></div>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript">
+                var x = $("#number").text();
+                var lista = "<ul>";
+                for (var i = 1; i<=x;i++){
+                    lista+="<li>"+i+"</li>";
+                }
+                lista+="</ul>";
+                $("#contenedorLista").html(lista);         
+
+        </script>
+    </body>
+</html>
