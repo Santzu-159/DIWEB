@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>GEOLocation ejemplo sencillo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    <body onload="alertaTras5seg()">
+        Pulsa el botón para que esta página geolocalice al usuario.
+        <div id="status">Location:</div>
+        <input type="button" value="Localizar" onclick="getLocation()"/>
+        <script>
+
+            var locationSave;
+            var color;
+
+    function alertaTras5seg() {
+            setInterval(getLocation,5000);
+        }
+
+        function getLocation() {
+            if(navigator && navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(geoLocationSuccess, geoLocationError);
+            }else{
+                color="grey";
+                showMsg('El API de GeoLocation no funciona en este navegador');
+            }
+        }
+        function geoLocationSuccess(position){
+            var location = "Latitud: " + position.coords.latitude; 
+            location += ". Longitud: " + position.coords.longitude; 
+            if(location==locationSave){
+                color="red";
+            }else{
+                color="green";
+            }
+            locationSave=location;
+            showMsg(location);
+        }
+        function geoLocationError(err){
+            var msg = '';
+
+            switch(err.code) {
+                case 1: msg = 'El usuario no dio permiso';
+                break;
+                case 2: msg = 'Información no disponible';
+                break;
+                case 3: mnsg='Tiempo de espera agotado para la localizacion';
+                break;
+                default:msg='Error al solicitar localización';
+                break;
+            }
+
+            showMsg(msg);
+        }
+        function showMsg(msg){
+            var status=document.getElementById("status");            
+            status.innerHTML="<font color="+color+">"+msg+"</font>";
+            console.log(msg);
+        }
+        </script>
+    </body>
+</html>
