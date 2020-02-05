@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>index27</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p>Eso es un párrafo</p>
+        <button id="hp" style="cursor:pointer">Obten Altura del párrafo</button>
+        <button id="hd" style="cursor:pointer">Obten Altura del documento</button>
+        <button id="hw" style="cursor:pointer">Obten Altura de la ventana</button>
+        <div></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        //al hacer click en cada botón se obtiene la altura de de los elementos
+        $("hp").click(function(){
+            $("div").text("La Altura del Párrafo es:"+$("p").height());
+        });
+        $("hd").click(function(){
+            $("div").text("La Altura del Documento es:"+$(document).height());
+        });
+        $("hw").click(function(){
+            $("div").text("La Altura de la Ventana es:"+$(window).height());
+        });
+        </script>
+    </body>
+</html>

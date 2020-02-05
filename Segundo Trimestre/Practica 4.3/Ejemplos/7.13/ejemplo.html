@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>index22</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+    <p>ejemplos de bucle para recorrer array</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        //ejemplo con vector de 2 números enteros
+        $.each([50,90],
+            function(i,value){ //array
+                document.write("Posición "+i+" = "+value+"<br>");
+            });
+            //ejemplo con vector de nombres que llevan su propio índice
+            var estudiantes = {"nombre-0":"Juan","nombre-1":"Enrique"};
+            $.each(estudiantes,
+                function(j,value){ //array
+                    document.write(j+" = "+value+"<br>");
+                });
+    </script>
+    </body>
+</html>

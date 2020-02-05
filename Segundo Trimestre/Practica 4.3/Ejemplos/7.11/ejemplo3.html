@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .selected{color:blue;}
+            .resaltado{background-color: yellow;}
+        </style>
+    </head>
+    <body>
+        <p class="selected">PÁRRAFO1</p>
+        <p class="resaltado">PÁRRAFO2</p>
+        <p>PÁRRAFO3</p>
+        <div id="resultado1"> El primer párrafo tiene la clase selected:</div>
+        <div id="resultado2"> El segundo párrafo tiene la clase resaltado:</div>
+        <div id="resultado3"> El tercer párrafo tiene la clase selected o resaltado:</div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(
+            function(){//cuando el documento esté listo
+                //añade al div si el primer párrafo tiene la clase selected
+                $("div#resultado1").append($("p:first").hasClass("selected").toString());
+                //añade al div si el segundo párrafo tiene la clase
+                $("div#resultado2").append($("p:eq(1)").hasClass("resaltado").toString());
+                //añade al div si el tercer párrafo tiene la clase
+                $("div#resultado3").append($("p:last").hasClass("selected").toString());
+
+        });
+        </script>
+    </body>
+</html>

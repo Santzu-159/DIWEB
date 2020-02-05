@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>index23</title>
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                margin:5px;
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background-color:blue;"></div>
+        <div style="background-color:rgb(15,99,30);"></div>
+        <div style="background-color:#123456;"></div>
+        <div style="background-color:#f11;"></div>
+        <div id="resultado" style="clear:both;border:2px solid orange"></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        //al hacer click en el div obtiene su color de fondo
+        $("div").click(
+            function(){
+                //se guarda color en variable
+                var color=$(this).css("background-color");
+                //se lleva el color al div con id resultado
+                $("#resultado").html("El color es: "+"<span style='color=color'>"+color+"</span>");
+            }
+        );
+        </script>
+
+    </body>
+</html>

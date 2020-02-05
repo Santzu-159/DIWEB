@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>        
+        <meta charset="UTF-8">
+        <title>uso del método .html()</title>
+        <style>
+            p{
+                margin:4px;
+                font-size: 16px;
+                font-weight: bolder;
+            }
+            .azul{color:blue;}
+            .debajo{text-decoration:underline;}
+            .resaltado{background-color: yellow;}
+        </style>
+    </head>
+    <body>
+    <p class="azul debajo resaltado">Hola</p>
+    <p class="azul debajo resaltado">Hola1</p>
+    <p class="azul debajo resaltado">Hola2</p>
+    <p class="azul debajo resaltado">Hola3</p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        //quita la clase azul y resaltado en los párrafos impares
+        $("p:even").removeClass("azul resaltado");
+    </script>
+    </body>
+</html>

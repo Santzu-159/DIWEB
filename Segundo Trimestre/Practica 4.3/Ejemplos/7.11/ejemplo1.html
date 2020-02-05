@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ejemplo val</title>
+        <style>
+            p{color:red; margin:4px;}
+            b{color:blue;}
+        </style>
+    </head>
+    <body>
+        <p></p>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(
+                function(){//cuando el documento esté listo
+                    alert($("h1").css("font-size")); //devuelve el valor css
+                    $("a").css("font-size","30px"); //modifica el valor css
+                    $("h1").css({"color":"red","background-color":"yellow"});
+                    //modifica valores css
+                });
+        </script>
+    </body>
+</html>

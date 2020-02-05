@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>index27</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p>Eso es un párrafo a eliminar cuando se pulsa el botón</p>
+        <button style="cursor:pointer">Llama la la función para eliminar el párrafo</button>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        //al hacer click en botón borra el párrafo
+        $("button").click(function(){
+            $("p").empty();
+        });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>index30</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p>Eso es un párrafo</p>
+        <button id="hp" style="cursor:pointer">Obten Altura del párrafo</button>
+
+        <div></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        //al hacer click en cada botón se borra el párrafo
+        $("button").click(function(){
+            $("p").remove();
+        });
+        </script>
+    </body>
+</html>
