@@ -1,0 +1,23 @@
+table{
+    text-align: center;				
+    padding: 0px;
+    border-collapse:collapse;
+    float: left;
+}	
+
+table, th, td{
+    border: 1px solid #000;
+}
+
+table td, table th{
+    padding: 10px;
+}
+
+.seleccionado{
+    background: yellow;
+}
+
+fieldset{
+    margin-left: 70%;				
+    width: 14%;
+}
