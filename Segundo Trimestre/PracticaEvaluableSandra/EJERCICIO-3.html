@@ -1,0 +1,56 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Lista de Items</title>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+     <script>
+        // Al cargar la página realiza las siguientes operaciones
+
+        $(document).ready(function(){
+            
+            // Añadir un elemento al final de la lista.
+            alert("Añadimos un elemento al final");
+            $("ul").append("<li>Elemento al final</li>");
+
+            // Añadir un elemento al principio de la lista.
+            alert("Añadimos un elemento al principio");
+            $("ul").prepend("<li>Elemento al principio</li>");
+
+            // Eliminar el último elemento.
+            alert("Eliminamos el elemento del final");
+            $("li:last-child").remove();
+
+            // Eliminar el primer elemento.
+            alert("Eliminamos el elemento del principio");
+            $('li:first-child').remove();
+
+            // Eliminar el segundo y quinto elemento
+            alert("Eliminamos el segundo y quinto elemento");
+            $("li:eq(1), li:eq(6)").remove();
+
+            //Eliminamos los dos ultimos
+            alert("Elimino los dos últimos items");
+            $("li:last-child").remove();
+            $("li:last-child").remove();
+        });
+    </script>
+
+</head>
+
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+		<li>Item 5</li>
+		<li>Item 6</li>
+		<li>Item 7</li>
+		<li>Item 8</li>
+		<li>Item 9</li>
+    </ul>
+</body>
+</html>

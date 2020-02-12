@@ -1,0 +1,32 @@
+<html>
+<head>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+<script>
+//al cargar la página
+    $(document).ready(function(){
+ // Recorre todos los inputs del formulario
+    for (i of $(":input")) {
+      switch ($(i).attr("type")) { //según los atributos de type        
+		case 'text': 
+           $(i).attr("value","Jamón Serrano 5J");// Si es un input de texto escribo con attr() el valor Jamón Serrano 5J
+           break;
+        case 'checkbox':
+           $(i).prop("checked","true");// Si es un input de check lo marco con chequeado y a true con prop()
+           break;
+       }
+     }
+    });
+
+</script>
+</head>
+<body>
+    <form>
+        <input type="text" />
+        <input type="checkbox" />
+    </form>
+</body>
+</html>

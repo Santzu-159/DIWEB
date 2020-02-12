@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio-Examen4</title>
+    <style type="text/css">
+        p + ul {
+            display: block;
+        }
+       .fondo{background-color: yellow}
+    </style>
+     <script>
+	//al cargar la página se debe realizar una función con las siguientes acciones
+        // 1. Muestra en un alert la cantidad de cursos(length) de que está compuesto el ciclo.
+    
+		// 2. Aplique la clase fondo a los elementos pares de la lista(el último hijo de la lista)
+			
+        // 3. Muestra las listas al pasar por encima el ratón por el párrafo con el texto Primero o Segundo y sus listas siguientes y ocultar al retirarlo.  La informaciónTardará en aparecer(show) y desparecer (hide)  5 segundos(debes pasarlo a milisegundos).
+    </script>
+</head>
+
+<body>
+    <p>Primero</p>
+    <ul>
+        <li>Base de Datos</li>
+        <li>Lenguajes de Marcas</li>
+    </ul>
+    <p>Segundo</p>
+    <ul>
+        <li>DWESE
+            <ul data-hours="10">
+                <li class="azul" >Desarrollo Web en Entorno Servidor</li>
+            </ul>
+        </li>
+        <li>DWECL
+            <ul data-hours="7">
+                <li class="azul">Desarrollo Web en Entorno Cliente</li>
+            </ul>
+        </li>
+        <li>DAW
+            <ul data-hours="3">
+                <li class="azul">Despliegue de Aplicaciones Web</li>
+            </ul>
+        </li>
+        <li>DIWEB
+            <ul data-hours="6">
+                <li class="azul">Diseño de Interfaces Web</li>
+            </ul>
+        </li>
+        <li>EIE
+            <ul data-hours="4">
+                <li class="azul">Entorno e Iniciativa Empresarial</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
+
