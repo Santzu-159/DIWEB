@@ -1,0 +1,17 @@
+.box {
+  position: relative;
+  top: 200px;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  background-color: pink;
+}
+
+.button {
+  width: 200px;
+  cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1em;
+  background-color: azure;
+}
