@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div data-role="page" >
+
+        <div data-role="panel" id="myPanel"> <!-- Esto es el mensaje que aparecerá en el menú latera cuando se pulse el botón-->
+            <h2>¿Que tal?</h2>
+            <p>Espero que mi página esté siendo de tu agrado!</p>
+          </div> 
+
+
+        <div data-role="header" > <!-- Esto es la barra de inicio (la de navegación) y se ha de poner en el header-->
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Inicio</a>
+            <h1>¡Hola!</h1>
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Buscar</a>
+          </div>
+        
+
+        <div data-role="main" class="ui-content" ><!-- dentro del main, creo dos botones, uno para el popUp y otro para el menú lateral-->
+
+            <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">¡Pulsame!</a>
+            <div data-role="popup" id="myPopup" class="ui-content">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <p>¡¡Bienvenido a mi página!! :D</p>
+            </div>
+
+            <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Haz click :)</a>
+
+
+            <div data-role="collapsible" data-collapsed-icon="star"> <!-- Creamos un select -->
+                <h2>Puntúa mi página</h2>
+              <div>      
+                  <select name="simple" id="selectorSimple">
+                      <option value="1">Buena</option>
+                      <option value="2">Buenísima</option>
+                      <option value="3">La mejor de todas</option>
+                      <option value="4">Fenomenal</option>
+                      <option value="4">¡¡Increíble!!</option>
+                  
+                  </select>
+
+                  <a href="#miPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Enviar</a>
+                  <div data-role="popup" id="miPopup" class="ui-content">
+                      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                      <p>¡Tu puntuación ha sido enviada!</p>
+                  </div>
+          
+              </div>
+        </div>
+
+        <div data-role="footer" >
+            <h1>¡Gracias por visitar mi página!</h1>
+        </div>
+    </div>
+    
+
+</body>
+</html>
+
+<!-- 
+    data-role="collapsible" sirve para crear un bloque de contenido plegable
+    data-role="panel" sirve para crear el panel lateral
+
+    las demás que he usado son las de la documentación
+
+-->
