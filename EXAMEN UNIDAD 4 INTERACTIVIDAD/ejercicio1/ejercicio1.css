@@ -1,0 +1,37 @@
+body 
+  fuente: Verdana
+  
+h1, h2, h3 
+   color: darkblue
+  
+.rating-circle 
+   altura: 2em
+   ancho: 2em
+   borde: .1em solid black
+   radio del borde: 1.1em
+   visualización en bloque
+   margen : 0
+   margen externo: .1em
+ 
+
+.rating-hover 
+   color de fondo: yellow
+  
+
+.rating-chosen 
+   color de fondo: green
+  
+
+#addClass 
+  margen superior: 20px
+  color: green
+
+.example 
+  cursiva
+
+.rojo 
+  color: white
+  color de fondo: red
+
+.azul 
+  color: blue
